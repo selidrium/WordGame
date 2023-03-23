@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ead32a-69ab-4b56-8817-266aaef00e7c" name="Changes" comment="start of lesson 3, finished Player class">
-      <change afterPath="$PROJECT_DIR$/src/Hosts.java" afterDir="false" />
+    <list default="true" id="77ead32a-69ab-4b56-8817-266aaef00e7c" name="Changes" comment="Lessonn 3 finished Host class">
+      <change afterPath="$PROJECT_DIR$/src/Turn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gameplay.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Numbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,14 +98,33 @@
       <option name="project" value="LOCAL" />
       <updated>1679576684343</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lessonn 3 finished Host class">
+      <created>1679594990133</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679594990133</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="completed lesson 2" />
     <MESSAGE value="updated lesson 2 to add user's name in prompt" />
     <MESSAGE value="start of lesson 3, finished Player class" />
-    <option name="LAST_COMMIT_MESSAGE" value="start of lesson 3, finished Player class" />
+    <MESSAGE value="Lessonn 3 finished Host class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lessonn 3 finished Host class" />
   </component>
 </project>

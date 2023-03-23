@@ -9,8 +9,9 @@ public class Numbers {
         return randomNum;
     }
 
-    public void setRandomNum(int randomNum) {
-        Numbers.randomNum = randomNum;
+    public static void setRandomNum() {
+        Random rand = new Random();
+        randomNum = rand.nextInt(100);
     }
 
     // Methods
@@ -19,17 +20,16 @@ public class Numbers {
         randomNum = rand.nextInt(101);
     }
 
-    public boolean compareNumber(int guess) {
+    public static boolean compareNumber(int guess) {
         if (guess == randomNum) {
-            System.out.println("Congratulations, you guessed the number!");
             return true;
         }
         else if ( guess > randomNum) {
-            System.out.println("I'm sorry.  That guess was too high.");
+            System.out.println("I'm sorry, that guess was too high.");
             return false;
         }
         else {
-            System.out.println("I'm sorry, That guess was too low.");
+            System.out.println("I'm sorry, that guess was too low.");
             return false;
         }
 
