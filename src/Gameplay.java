@@ -25,7 +25,7 @@ public class Gameplay {
         game.generateNumber();
         boolean guessed = false;
         while ( !guessed ) {
-            System.out.println("Guess a number between 1 - 100");
+            System.out.println(person.getFirstName() + person.getLastName() +", Guess a number between 1 - 100");
             int guess = scan.nextInt();
             if (game.compareNumber(guess)) {
                 guessed = true;
