@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class Numbers {
 
-    private int randomNum;
+    private static int  randomNum;
 
     // Setters and Getters
     public int getRandomNum() {
@@ -10,7 +10,7 @@ public class Numbers {
     }
 
     public void setRandomNum(int randomNum) {
-        this.randomNum = randomNum;
+        Numbers.randomNum = randomNum;
     }
 
     // Methods
