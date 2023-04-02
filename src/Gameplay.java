@@ -9,27 +9,24 @@ public class Gameplay {
 
         Hosts host = new Hosts("Alan", "Garcia");
         host.randomizeNum();
+        Players[] currentPlayers = new Players[3];
 
         // Collect User Info
-        System.out.println("What is your first name?");
-        String firstName = scan.next();
-        System.out.println("You are entering a last name? (y/n)");
-        String answer = scan.next().toLowerCase();
-
-        if (answer.equals("y")){
-            System.out.println("Enter your last name");
-            String lastName = scan.next();
-            player = new Players(firstName, lastName);
-        } else {
-            player = new Players(firstName);
+        for (int i = 0; i < currentPlayers.length; i++) {
+            System.out.print("Please enter player " + (i + 1) + " name: ");
+            String name = scan.nextLine();
+            currentPlayers[i] = new Players(name);
         }
+
 
         // Game starts
         Turn turn = new Turn();
+        int currentPlayerIndex = 0;
         boolean win = false;
 
         while (true) {
-            win = turn.takeTurn(player, host);
+            win = turn.takeTurn(currentPlayers[currentPlayerIndex], host);
+            currentPlayerIndex = (currentPlayerIndex + 1) % currentPlayers.length;
 
             if (win) {
                 System.out.println("Would you like to play again? (Y/N)");
