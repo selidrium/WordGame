@@ -13,9 +13,11 @@ public class Gameplay {
 
         // Collect User Info
         for (int i = 0; i < currentPlayers.length; i++) {
-            System.out.print("Please enter player " + (i + 1) + " name: ");
-            String name = scan.nextLine();
-            currentPlayers[i] = new Players(name);
+            System.out.println("Please enter player " + (i + 1) + " name: ");
+            String firstName = scan.nextLine();
+            System.out.println("Enter your last name? Leave blank if you don't want it shown");
+            String lastName = scan.nextLine();
+            currentPlayers[i] = new Players(firstName);
         }
 
 

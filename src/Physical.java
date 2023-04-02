@@ -1,21 +1,19 @@
 public class Physical implements Award {
-    private String[] prizes;
-
-    public Physical(String[] prizes) {
-        this.prizes = prizes;
-    }
+    private String[] prizes = {"Trip to Hawaii", "New car", "Flat screen TV", "Gourmet cooking set", "Designer handbag"};
 
     public int getRandomPrize() {
         return (int) (Math.random() * prizes.length);
     }
 
-    public int displayWinnings(Players player, boolean isCorrect) {
-        int prizeIndex = getRandomPrize();
-        if (isCorrect) {
-            System.out.println(player.getFirstName() + " won a " + prizes[prizeIndex]);
+    public int displayWinnings(Players player, boolean isWinner) {
+        if (isWinner) {
+            int prizeIndex = getRandomPrize();
+            System.out.printf("%s, you won a %s!\n", player.getFirstName(), prizes[prizeIndex]);
+            return 0;
         } else {
-            System.out.println(player.getFirstName() + " lost. They could have won a " + prizes[prizeIndex]);
+            int prizeIndex = getRandomPrize();
+            System.out.printf("%s, you lost. You could have won a %s.\n", player.getFirstName(), prizes[prizeIndex]);
+            return 0;
         }
-        return 0;
     }
 }

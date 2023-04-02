@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ead32a-69ab-4b56-8817-266aaef00e7c" name="Changes" comment="Lessonn 3 finished Turn and updated Gameplay">
-      <change afterPath="$PROJECT_DIR$/src/Award.java" afterDir="false" />
+    <list default="true" id="77ead32a-69ab-4b56-8817-266aaef00e7c" name="Changes" comment="Lesson 4, added Award interface, Money and Physical classes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gameplay.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Money.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Physical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Physical.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Turn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679605456812</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Lesson 4, added Award interface, Money and Physical classes">
+      <created>1680393925932</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680393925932</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -130,6 +139,7 @@
     <MESSAGE value="start of lesson 3, finished Player class" />
     <MESSAGE value="Lessonn 3 finished Host class" />
     <MESSAGE value="Lessonn 3 finished Turn and updated Gameplay" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lessonn 3 finished Turn and updated Gameplay" />
+    <MESSAGE value="Lesson 4, added Award interface, Money and Physical classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4, added Award interface, Money and Physical classes" />
   </component>
 </project>

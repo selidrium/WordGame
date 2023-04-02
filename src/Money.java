@@ -1,19 +1,14 @@
 public class Money implements Award {
-    private int winningAmount;
-    private int losingAmount;
+    private int winAmount = 100;
+    private int loseAmount = -50;
 
-    public Money(int winningAmount, int losingAmount) {
-        this.winningAmount = winningAmount;
-        this.losingAmount = losingAmount;
-    }
-
-    public int displayWinnings(Players player, boolean isCorrect) {
-        int amount = isCorrect ? winningAmount : losingAmount;
-        if (isCorrect) {
-            System.out.println(player.getFirstName() + " won $" + winningAmount);
+    public int displayWinnings(Players player, boolean isWinner) {
+        if (isWinner) {
+            System.out.printf("%s, you won $%d!\n", player.getFirstName(), winAmount);
+            return winAmount;
         } else {
-            System.out.println(player.getFirstName() + " lost $" + losingAmount);
+            System.out.printf("%s, you lost $%d.\n", player.getFirstName(), Math.abs(loseAmount));
+            return loseAmount;
         }
-        return amount;
     }
 }
