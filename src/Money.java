@@ -1,6 +1,6 @@
 public class Money implements Award {
-    private int winAmount = 100;
-    private int loseAmount = -50;
+    private int winAmount = 1000;
+    private int loseAmount = -500;
 
     public int displayWinnings(Players player, boolean isWinner) {
         if (isWinner) {

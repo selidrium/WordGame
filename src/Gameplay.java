@@ -8,7 +8,7 @@ public class Gameplay {
     public static void main(String[] args) {
 
         Hosts host = new Hosts("Alan", "Garcia");
-        host.randomizeNum();
+        host.randomizePhrase();
         Players[] currentPlayers = new Players[3];
 
         // Collect User Info
@@ -34,7 +34,7 @@ public class Gameplay {
                 System.out.println("Would you like to play again? (Y/N)");
                 String choice = scan.next().toLowerCase();
                 if (choice.equals("y")) {
-                    host.randomizeNum();
+                    host.randomizePhrase();
                     win = false;
                 }
                 else {

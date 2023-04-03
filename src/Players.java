@@ -20,6 +20,10 @@ public class Players extends Person{
         this.amountOfMoney = amountOfMoney;
     }
 
+    public void addMoney(int amount) {
+        this.amountOfMoney += amount;
+    }
+
     @Override
     public String toString () {
         return (getFirstName() + " " + getLastName() + ": $" + getAmountOfMoney());
