@@ -7,8 +7,10 @@ public class Gameplay {
 
     public static void main(String[] args) {
 
+        new GUI();
+
         Hosts host = new Hosts("Alan", "Garcia");
-        host.randomizePhrase();
+//        host.randomizePhrase();
         Players[] currentPlayers = new Players[3];
 
         // Collect User Info
@@ -31,16 +33,7 @@ public class Gameplay {
             currentPlayerIndex = (currentPlayerIndex + 1) % currentPlayers.length;
 
             if (win) {
-                System.out.println("Would you like to play again? (Y/N)");
-                String choice = scan.next().toLowerCase();
-                if (choice.equals("y")) {
-                    host.randomizePhrase();
-                    win = false;
-                }
-                else {
-                    System.out.println("Thanks for playing");
-                    break;
-                }
+                host.playAgain();
             }
         }
 

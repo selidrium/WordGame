@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ead32a-69ab-4b56-8817-266aaef00e7c" name="Changes" comment="Lesson 5, updated Hosts class">
-      <change afterPath="$PROJECT_DIR$/src/Phrases.java" afterDir="false" />
+    <list default="true" id="77ead32a-69ab-4b56-8817-266aaef00e7c" name="Changes" comment="Lesson 5, updated phrases, gameplay, hosts, money, phrases, players, turn classes">
+      <change afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Award.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Award.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gameplay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gameplay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hosts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hosts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Money.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Players.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Players.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Physical.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Physical.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Turn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,6 +20,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -28,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Lesson4" />
+        <entry key="$PROJECT_DIR$" value="Lesson05" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680398523288</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Lesson 5, updated phrases, gameplay, hosts, money, phrases, players, turn classes">
+      <created>1680498972628</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680498972628</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,6 +157,7 @@
     <MESSAGE value="Lessonn 3 finished Turn and updated Gameplay" />
     <MESSAGE value="Lesson 4, added Award interface, Money and Physical classes" />
     <MESSAGE value="Lesson 4, updated Award interface, Money, Physical, Gameplay and Turn classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 4, updated Award interface, Money, Physical, Gameplay and Turn classes" />
+    <MESSAGE value="Lesson 5, updated phrases, gameplay, hosts, money, phrases, players, turn classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 5, updated phrases, gameplay, hosts, money, phrases, players, turn classes" />
   </component>
 </project>
