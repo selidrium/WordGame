@@ -1,17 +1,20 @@
 import java.util.Scanner;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
 
 public class Turn {
-//    Money money = new Money();
-//    Physical physical = new Physical();
+
     Scanner scan = new Scanner(System.in);
-    public boolean takeTurn(Players player, Hosts host) {
+    public boolean takeTurn(Players player, Hosts host,JTextArea jTextArea,GUI gui) {
 
-        System.out.println(player.getFirstName() + ", welcome to the game!");
-        System.out.println("The phrase to guess is: " + Phrases.getPlayingPhrase());
+        jTextArea.append("\n\n"+player.getFirstName() + ", welcome to the game!\n");
 
+        jTextArea.append( "The phrase to guess is: " + Phrases.getPlayingPhrase());
+        jTextArea.setCaretPosition(jTextArea.getDocument().getLength());
         while (true) {
-            System.out.println(host.getFirstName() + " says \"" + player.getFirstName() + ", enter your guess for a letter in my phrase\"");
-            String guess = scan.nextLine().toLowerCase();
+
+            String guess=          JOptionPane.showInputDialog(host.getFirstName() + " says \"" + player.getFirstName() + ", enter your guess for a letter in my phrase\n\n");
 
             try {
                 boolean letterFound = Phrases.findLetters(guess);
@@ -27,14 +30,15 @@ public class Turn {
 
                     int winnings = award.displayWinnings(player, true);
                     if (award instanceof Money) {
-//                        winnings = ((Money) award).displayWinnings(player, true);
                         player.addMoney(1000);
                         System.out.println(winnings);
                     } else {
                         int prizeIndex = ((Physical) award).displayWinnings(player, true);
                         String prize = ((Physical) award).getPrizeAtIndex(prizeIndex);
-                        System.out.printf("%s, yes, that letter is in the phrase! You won a %s!\n", player.getFirstName(), prize);
-//                        System.out.println(winnings);
+
+                        jTextArea.append("\n\n");
+                        jTextArea.append(""+player.getFirstName()+", yes, that letter is in the phrase! You won a "+prize+"!\n");
+                        jTextArea.setCaretPosition(jTextArea.getDocument().getLength());
                     }
 
 
@@ -43,20 +47,21 @@ public class Turn {
                 } else {
                     int winnings = award.displayWinnings(player, false);
                     player.addMoney(-500);
-                    System.out.printf("%s, no, that letter is not in the phrase!");
-                    System.out.println(winnings);
-                    System.out.println(player.toString());
+
+                    jTextArea.append("\n%s, no, that letter is not in the phrase!\n");
+                    jTextArea.append(winnings+"");
+                    jTextArea.append(player.toString()+"\n\n");
+                    jTextArea.setCaretPosition(jTextArea.getDocument().getLength());
                 }
             } catch (MultipleLettersException e) {
-                System.out.println(e.getMessage());
+                JOptionPane.showMessageDialog(null, e.getMessage());
                 return false;
             } catch (IllegalArgumentException e) {
-                System.out.println("Please enter a letter.");
+                JOptionPane.showMessageDialog(null,"Please Enter A number ");
+
                 return false;
             }
         }
     }
-
-
 
 }

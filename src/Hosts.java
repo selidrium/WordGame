@@ -22,8 +22,7 @@ public class Hosts extends Person{
         System.out.println("Would you like to play again? (y/n)");
         String choice = scanner.nextLine();
         if (choice.equalsIgnoreCase("y")) {
-//            gamePhrase = enterPhrase();
-//            Phrases.resetPlayingPhrase();
+
             enterPhrase();
             System.out.println("New phrase entered. Let's play again!");
         } else {
@@ -33,14 +32,5 @@ public class Hosts extends Person{
     }
 
 
-    public void randomizePhrase() {
-        // Prompt the host to enter a phrase
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter a phrase for the players to guess: ");
-        String phrase = scan.nextLine().toLowerCase();
 
-        // Send the phrase to Phrases class to store it in gamePhrase field
-        Phrases phrases = new Phrases();
-        phrases.setGamePhrase(phrase);
-    }
 }
