@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ead32a-69ab-4b56-8817-266aaef00e7c" name="Changes" comment="Lesson 7, updated gameplay, gui, hosts, turn">
+    <list default="true" id="77ead32a-69ab-4b56-8817-266aaef00e7c" name="Changes" comment="Lesson 8, updated GUI">
+      <change afterPath="$PROJECT_DIR$/media/images/prize.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/sounds/sound1.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/sounds/sound2.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GUI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,17 +36,21 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2NO3U5GThFTCzqKjImLQ3RWYlv3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Gameplay" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Gameplay" />
@@ -143,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681599755412</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Lesson 8, updated GUI">
+      <created>1681800107587</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1681800107587</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +173,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="completed lesson 2" />
     <MESSAGE value="updated lesson 2 to add user's name in prompt" />
@@ -169,6 +185,7 @@
     <MESSAGE value="Lesson 5, updated phrases, gameplay, hosts, money, phrases, players, turn classes" />
     <MESSAGE value="Lesson 7, updated gameplay, added uncompleted GUI" />
     <MESSAGE value="Lesson 7, updated gameplay, gui, hosts, turn" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 7, updated gameplay, gui, hosts, turn" />
+    <MESSAGE value="Lesson 8, updated GUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 8, updated GUI" />
   </component>
 </project>
