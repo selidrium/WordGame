@@ -211,6 +211,7 @@ public class GUI extends JFrame implements ActionListener {
         }
 
 
+
         if (e.getSource() == addPlayerItem ) {
             if (playerIndexCounter == 3) {
                 JOptionPane.showMessageDialog(null, "Only three players are allowed.");
